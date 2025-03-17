@@ -196,9 +196,8 @@ ol {
 }
 
 .button:focus-visible {
-  outline: 1px solid #FFFFFF;
+  outline: none;
   outline-offset: 1px;
-  border-radius: 0;
 }
 
 .button:hover {
@@ -216,8 +215,10 @@ ol {
 }
 
 .more-button {
-  width: calc(100% - 4px);
+  width: calc(100% - 5px);
   margin-top: 30px;
+  margin-bottom: 2px;
+  margin-left: 2px;
 }
 
 .content__details {
@@ -238,6 +239,7 @@ ol {
 
 .content__accent {
   color: #545050;
+  text-align: center;
 }
 
 .content__list-container {
@@ -251,10 +253,11 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-top: 1px;
 }
 
 .content__list-item {
-  margin: 0 2px;
+  margin-left: 2px;
   width: 390px;
   display: block;
 }
@@ -264,7 +267,7 @@ ol {
 }
 
 .content__list-item:focus-visible {
-  outline: 1px solid #FFFFFF;
+  outline: 10px solid #FFFFFF;
 }
 
 .content__list-item:active {
