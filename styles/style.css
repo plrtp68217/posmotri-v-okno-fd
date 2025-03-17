@@ -267,7 +267,7 @@ ol {
 }
 
 .content__list-item:focus-visible {
-  outline: 10px solid #FFFFFF;
+  outline: 1px solid #FFFFFF;
 }
 
 .content__list-item:active {
