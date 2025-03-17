@@ -138,6 +138,7 @@ ol {
   border-bottom: 1px solid #FFFFFF;
   padding: 2.5px 0;
   appearance: none;
+  font-family: Fira Sans Condensed;
 }
 
 .search-form__textfield:focus {
@@ -189,6 +190,7 @@ ol {
   letter-spacing: 0%;
   color: #FFFFFF;
   text-align: center;
+  font-family: Fira Sans Condensed;
 }
 
 .button:focus {
@@ -301,7 +303,7 @@ ol {
 }
 
 .content__video-card-title {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   font-family: Oswald;
   font-weight: 700;
   font-size: 30px;
