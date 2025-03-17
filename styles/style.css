@@ -27,7 +27,6 @@ ol {
   list-style: none;
 }
 
-/* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
 }
@@ -81,6 +80,7 @@ ol {
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
+  position: relative;
 }
 
 .result__video {
@@ -112,6 +112,10 @@ ol {
   width: fit-content;
 }
 
+.search-form__label:hover {
+  cursor: pointer;
+}
+
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #FFFFFF;
   outline-offset: 1px;
@@ -138,6 +142,10 @@ ol {
 
 .search-form__textfield:focus {
   outline: none;
+}
+
+.search-form__textfield:active {
+  border: none;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after{
@@ -171,6 +179,47 @@ ol {
   gap: 15px;
 }
 
+.button {
+  border: 1px solid #FFFFFF;
+  background: transparent;
+  padding: 6px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #FFFFFF;
+  outline-offset: 1px;
+  border-radius: 0;
+}
+
+.button:hover {
+  cursor: pointer;
+  text-decoration: 1px underline #FFFFFF;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  align-self: flex-end;
+}
+
+.more-button {
+  width: calc(100% - 4px);
+  margin-top: 30px;
+}
+
 .content__details {
   grid-area: content__details;
   width: 100%;
@@ -192,14 +241,42 @@ ol {
 }
 
 .content__list-container {
+  width: 399px;
   height: 298px;
-  overflow: auto;
+  overflow-y: scroll;
+  position: relative;
 }
 
 .content__list {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+.content__list-item {
+  margin: 0 2px;
+  width: 390px;
+  display: block;
+}
+
+.content__list-item:focus {
+  outline: none;
+}
+
+.content__list-item:focus-visible {
+  outline: 1px solid #FFFFFF;
+}
+
+.content__list-item:active {
+  background-color: #545050;
+}
+
+.content__list-item:hover {
+  text-decoration: underline;
+}
+
+.content__list-item:has(.content__card-link_current) {
+  background-color: #545050;
 }
 
 .content__card-link {
@@ -214,6 +291,9 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
+  padding: 2px 4px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .content__video-card-title {
@@ -224,8 +304,8 @@ ol {
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
+  overflow: hidden;  
+  white-space: nowrap;  
   text-overflow: ellipsis;
 }
 
@@ -234,9 +314,10 @@ ol {
   font-size: 18px;
   line-height: 16.2px;
   letter-spacing: 0%;
+  display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
   overflow: hidden;
 }
 
@@ -245,6 +326,7 @@ ol {
   height: 103px;
   object-fit: cover;
   object-position: center;
+  flex-shrink: 0;
 }
 
 
