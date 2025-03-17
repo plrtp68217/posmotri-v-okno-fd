@@ -41,10 +41,10 @@ ol {
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
 } 
@@ -53,23 +53,23 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  inline-size: 1200px;
-  block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
 }
 
 
 .content {
-  width: 1140px;
   display: grid;
-  column-gap: 30px;
-  align-items: end;
   grid-template-columns: 711px 399px;
   grid-template-areas: "result content__details";
+  align-items: end;
+  column-gap: 30px;
+  width: 1140px;
 }
 
 .result {
@@ -77,10 +77,10 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
-  position: relative;
 }
 
 .result__video {
@@ -99,11 +99,11 @@ ol {
 }
 
 .search-form__fieldset-title {
+  margin-bottom: 5px;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
-  margin-bottom: 5px;
 }
 
 .search-form__label {
@@ -127,18 +127,18 @@ ol {
 
 .search-form__textfield {
   width: 225px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #FFFFFF;
-  background-color: transparent;
   border: none;
   border-top: 1px solid #FFFFFF;
   border-bottom: 1px solid #FFFFFF;
   padding: 2.5px 0;
-  appearance: none;
+  color: #FFFFFF;
   font-family: Fira Sans Condensed;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background-color: transparent;
+  appearance: none;
 }
 
 .search-form__textfield:focus {
@@ -151,21 +151,21 @@ ol {
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after{
   content: '';
+  position: absolute;
   width: 15px;
   height: 15px;
   background-color: #FFFFFF;
-  position: absolute;
 }
 
 .search-form__pseudo-checkbox {
-  width: 19px;
-  height: 19px;
-  border: 1px solid #FFFFFF;
-  margin: 1.5px 5px 1.5px 0;
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 19px;
+  height: 19px;
+  margin: 1.5px 5px 1.5px 0;
+  border: 1px solid #FFFFFF;
 }
 
 .search-form__label-text {
@@ -182,15 +182,15 @@ ol {
 
 .button {
   border: 1px solid #FFFFFF;
-  background: transparent;
   padding: 6px 0;
+  color: #FFFFFF;
+  font-family: Fira Sans Condensed;
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #FFFFFF;
   text-align: center;
-  font-family: Fira Sans Condensed;
+  background: transparent;
 }
 
 .button:focus {
@@ -203,8 +203,8 @@ ol {
 }
 
 .button:hover {
-  cursor: pointer;
   text-decoration: 1px underline #FFFFFF;
+  cursor: pointer;
 }
 
 .button:active {
@@ -212,8 +212,8 @@ ol {
 }
 
 .search-form__submit-button {
-  width: 194px;
   align-self: flex-end;
+  width: 194px;
 }
 
 .more-button {
@@ -245,10 +245,10 @@ ol {
 }
 
 .content__list-container {
+  position: relative;
   width: 399px;
   height: 298px;
   overflow-y: scroll;
-  position: relative;
 }
 
 .content__list {
@@ -259,9 +259,9 @@ ol {
 }
 
 .content__list-item {
-  margin-left: 2px;
-  width: 390px;
   display: block;
+  width: 390px;
+  margin-left: 2px;
 }
 
 .content__list-item:focus {
@@ -285,8 +285,8 @@ ol {
 }
 
 .content__card-link {
-  text-decoration: none;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .content__video-card {
@@ -296,43 +296,43 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
-  padding-right: 4px;
-  padding-top: 4px;
   width: 100%;
+  padding-top: 4px;
+  padding-right: 4px;
   overflow: hidden;
 }
 
 .content__video-card-title {
   margin-bottom: 4px;
+  overflow: hidden;
   font-family: Oswald;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
   letter-spacing: 0%;
-  text-transform: uppercase;
-  overflow: hidden;  
-  white-space: nowrap;  
-  text-overflow: ellipsis;
+  text-transform: uppercase;  
+  text-overflow: ellipsis;  
+  white-space: nowrap;
 }
 
 .content__video-card-description {
+  display: -webkit-box;
+  overflow: hidden;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
   letter-spacing: 0%;
-  display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   line-clamp: 4;
-  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
+  flex-shrink: 0;
   width: 194px;
   height: 103px;
   object-fit: cover;
   object-position: center;
-  flex-shrink: 0;
 }
 
 
