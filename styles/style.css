@@ -294,7 +294,8 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
-  padding: 2px 4px;
+  padding-right: 4px;
+  padding-top: 4px;
   width: 100%;
   overflow: hidden;
 }
