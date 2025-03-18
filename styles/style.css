@@ -18,10 +18,10 @@ ol,
 li,
 blockquote,
 fieldset {
-  margin-block: 0;
   margin-inline: 0;
-  padding-block: 0;
+  margin-block: 0;
   padding-inline: 0;
+  padding-block: 0;
 }
 
 ul,
@@ -81,16 +81,16 @@ ol {
 
 .result__video-container {
   position: relative;
+  margin-block-end: 16px;
   inline-size: 711px;
   block-size: 386px;
-  margin-block-end: 16px;
 }
 
 .result__video {
-  inline-size: 100%;
-  block-size: 100%;
   object-fit: cover;
   object-position: center;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .search-form {
@@ -135,7 +135,6 @@ ol {
 }
 
 .search-form__textfield {
-  min-inline-size: 225px;
   border: none;
   border-top: 1px solid #FFFFFF;
   border-bottom: 1px solid #FFFFFF;
@@ -147,6 +146,7 @@ ol {
   line-height: 100%;
   letter-spacing: 0%;
   background-color: transparent;
+  min-inline-size: 225px;
   appearance: none;
 }
 
@@ -161,9 +161,9 @@ ol {
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after{
   content: '';
   position: absolute;
+  background-color: #FFFFFF;
   inline-size: 15px;
   block-size: 15px;
-  background-color: #FFFFFF;
 }
 
 .search-form__pseudo-checkbox {
@@ -171,10 +171,10 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  inline-size: 19px;
-  block-size: 19px;
   margin: 1.5px 5px 1.5px 0;
   border: 1px solid #FFFFFF;
+  inline-size: 19px;
+  block-size: 19px;
 }
 
 .search-form__label-text {
@@ -225,10 +225,10 @@ ol {
 }
 
 .more-button {
-  inline-size: calc(100% - 5px);
+  margin-inline-start: 2px;
   margin-block-start: 30px;
   margin-block-end: 2px;
-  margin-inline-start: 2px;
+  inline-size: calc(100% - 5px);
 }
 
 .content__details {
@@ -254,9 +254,9 @@ ol {
 
 .content__list-container {
   position: relative;
+  overflow: auto;
   min-inline-size: 399px;
   block-size: 298px;
-  overflow: auto;
 }
 
 .content__list {
@@ -273,9 +273,9 @@ ol {
 }
 
 .content__card-link {
+  display: block;
   color: #FFFFFF;
   text-decoration: none;
-  display: block;
 }
 
 .content__card-link:focus {
