@@ -18,8 +18,10 @@ ol,
 li,
 blockquote,
 fieldset {
-  margin: 0;
-  padding: 0;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
 }
 
 ul,
@@ -28,7 +30,7 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar {
-  width: 4px;
+  inline-size: 4px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
@@ -53,7 +55,8 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin-inline: auto;
+  margin-block: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -69,7 +72,7 @@ ol {
   grid-template-areas: "result content__details";
   align-items: end;
   column-gap: 30px;
-  width: 1140px;
+  inline-size: 1140px;
 }
 
 .result {
@@ -78,14 +81,14 @@ ol {
 
 .result__video-container {
   position: relative;
-  width: 711px;
-  height: 386px;
+  inline-size: 711px;
+  block-size: 386px;
   margin-bottom: 16px;
 }
 
 .result__video {
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   object-fit: cover;
 }
 
@@ -99,7 +102,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  margin-bottom: 5px;
+  margin-block-end: 5px;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -126,7 +129,7 @@ ol {
 }
 
 .search-form__textfield {
-  width: 225px;
+  inline-size: 225px;
   border: none;
   border-top: 1px solid #FFFFFF;
   border-bottom: 1px solid #FFFFFF;
@@ -152,8 +155,8 @@ ol {
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after{
   content: '';
   position: absolute;
-  width: 15px;
-  height: 15px;
+  inline-size: 15px;
+  block-size: 15px;
   background-color: #FFFFFF;
 }
 
@@ -162,8 +165,8 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 19px;
-  height: 19px;
+  inline-size: 19px;
+  block-size: 19px;
   margin: 1.5px 5px 1.5px 0;
   border: 1px solid #FFFFFF;
 }
@@ -198,7 +201,7 @@ ol {
 }
 
 .button:focus-visible {
-  outline: none;
+  outline: 1px solid #FFFFFF;
   outline-offset: 1px;
 }
 
@@ -218,19 +221,19 @@ ol {
 
 .more-button {
   width: calc(100% - 5px);
-  margin-top: 30px;
-  margin-bottom: 2px;
-  margin-left: 2px;
+  margin-block-start: 30px;
+  margin-block-end: 2px;
+  margin-inline-start: 2px;
 }
 
 .content__details {
   grid-area: content__details;
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .title {
-  margin-bottom: 26px;
+  margin-block-end: 26px;
   font-family: Oswald;
   font-weight: 700;
   font-size: 75px;
@@ -246,8 +249,8 @@ ol {
 
 .content__list-container {
   position: relative;
-  width: 399px;
-  height: 298px;
+  inline-size: 399px;
+  block-size: 298px;
   overflow-y: scroll;
 }
 
@@ -255,13 +258,13 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-top: 1px;
+  margin-block-start: 1px;
 }
 
 .content__list-item {
   display: block;
-  width: 390px;
-  margin-left: 2px;
+  inline-size: 390px;
+  margin-inline-start: 2px;
 }
 
 .content__list-item:focus {
@@ -297,13 +300,13 @@ ol {
 .content__video-card-description-container {
   flex-grow: 1;
   width: 100%;
-  padding-top: 4px;
-  padding-right: 4px;
+  padding-block-start: 4px;
+  padding-inline-start: 4px;
   overflow: hidden;
 }
 
 .content__video-card-title {
-  margin-bottom: 4px;
+  margin-block-end: 4px;
   overflow: hidden;
   font-family: Oswald;
   font-weight: 700;
